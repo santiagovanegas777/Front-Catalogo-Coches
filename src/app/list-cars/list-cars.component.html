@@ -1,0 +1,14 @@
+<div *ngIf="characterList.length">
+  <h3>list Cars</h3>
+  <div *ngFor="let character of characterList">
+    <h4>{{character._id}}--{{character.cocheName}}</h4>
+    <h5>{{character.cocheModel}}</h5>
+    <h5>{{character.cochePower}} cv</h5>
+    <h5>{{character.cochePrice}}€</h5>
+    <h5>{{character.cochefuel}}</h5>
+    <h5>{{character.cocheColor}}</h5>
+    <img [src]="character.cocheImg" [alt]="character.cocheImg">
+
+  </div>
+
+</div>
